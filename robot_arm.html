@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Robot Arm</title>
+  </head>
+
+  <body onload="main()">
+    <p style="color:red; font-weight: bold">&larr;&rarr;: Part1 rotation,&uarr;&darr;: Part2 rotation(z-axis)</p>
+    <p style="color:green; font-weight: bold"> 'd' and 'f':Part2 rotation(x-axis), 'a' and 's': Part3 rotation(y-axis) </p>
+    <p style="color:purple; font-weight: bold">'t' and 'y': fingers(Part4) rotation(x-axis),'m' and 'n': fingers(Part4) rotation(y-axis)</p>
+    <p style="color:orange; font-weight: bold">'q' and 'w': Base rotation(y-axis)</p>
+    <canvas id="webgl" width="400" height="400">
+
+    </canvas>
+
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    <script src="./lib/cuon-matrix.js"></script>
+    <script src="robot_arm.js"></script>
+  </body>
+</html>
